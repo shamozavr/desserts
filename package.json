@@ -1,0 +1,24 @@
+{
+  "name": "desserts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"npm run backend\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "backend": "json-server --watch db.json --port 3001",
+    "lint": "eslint"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "concurrently": "^9.1.0",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.11.0",
+    "json-server": "^1.0.0-beta.3",
+    "prettier": "^3.3.3",
+    "vite": "^5.4.9"
+  }
+}
