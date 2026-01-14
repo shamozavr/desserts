@@ -1,13 +1,56 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <header>
+    <h1>Desserts</h1>
+  </header>
+  <main>
+    <div class="product-list">
+      <!-- Продукты будут добавлены здесь -->
+      <!-- <div>
+        <img src="./src/assets/images/image-creme-brulee-desktop.jpg" alt="">
+        <h2>name</h2>
+        <p>$price</p>
+        <button data-id="">
+          <img src="./src/assets/icons/icon-add-to-cart.svg" class="add-to-cart">
+          <span>Add to cart</span>
+        </button>
+      </div> -->
+    </div>
+    <div class="cart">
+      <h2>Your Cart (<span class="cart-count">0</span>)</h2>
+      <ul class="cart-items">
+        <!-- Товары в корзине будут добавлены здесь -->
+      </ul>
+      <div class="cart-total">
+        <span>Order Total</span>
+        <span class="total-price">$0.00</span>
+      </div>
+      <button class="confirm-order">Confirm the order</button>
+    </div>
+  </main>
+
+  <div class="notification hidden"></div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
+<!-- <picture>
+  <source srcset="${product.image.desktop}" media="(min-width: 1240px)">
+  <source srcset="${product.image.tablet}" media="(min-width: 768px)">
+  <source srcset="${product.image.mobile}" media="(min-width: 320px)">
+  <source srcset="${product.image.thumbnail}" media="(min-width: 0px)">
+</picture> -->
+<!-- <li class="cart-item">
+  <span></span>
+  <span></span>
+  <img src="" alt="" class="remove-item">
+</li> -->

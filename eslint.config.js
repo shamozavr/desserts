@@ -5,13 +5,13 @@ export default [
   js.configs.recommended,
   prettier,
   {
-    files: ["./src/**/*.js"],
+    files: ["src/**/*.js"],
     plugins: {
       prettier: prettier.rules
     },
     rules: {
       "no-unused-vars": "warn",
-      "no-undef": "warn",
+      "no-undef": "off",
     },
   }
 ];
